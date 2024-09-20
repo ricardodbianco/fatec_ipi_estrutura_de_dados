@@ -1,0 +1,45 @@
+Recursão acontece quando uma função realiza chamadas para ela mesma;
+
+->Todas recursão precisa de um || TESTE DE PARADA || 
+Exemplos:
+
+void imprime(int n){
+    if(n==1) printf("1");
+    else{
+        imprime(n-1);
+        printf("%d", n);
+    }
+}
+------------------------------
+
+a chamada imprime(4)  //instancia
+n=4
+imprime(3) //instancia
+n= 3
+imprime(2) //instancia
+n= 2
+imprime(1) //instancia
+n=1
+----------------
+tela : 1 2 3 4
+ 
+
+
+------------>
+
+Toda repetição pode acontecer por comando ou por recursão
+
+
+Todo comando de laço tem
+-inicio
+-fim
+-passo
+
+Algumas estruturas ou algoritmos ramificam: 
+
+Nesse caso, não conseguimos resolver com laços simples, usamos então recursão.
+DIVISÃO E         CONQUISTA
+|                         |          
+|                         | 
+v                         v  
+quickSort (C)             MergeSort(Java)
